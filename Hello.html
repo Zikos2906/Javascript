@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <h1>Lets Greet!</h1>
+        <input id="name" placeholder="Enter your name here">
+        <button onclick="greetme()">Greet Me</button>
+        <h2 id="Greet"></h2>
+
+        <script>
+            function greetme(){
+                myname = document.getElementById("name").value;
+                document.getElementById("Greet").innerHTML = "hello"+myname;
+            }
+            
+            
+            
+            
+            
+        
+        </script>
+    </body>
+</html>
