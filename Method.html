@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Magic Text</title>
+        <style>
+            body{
+                background-color: cadetblue;
+            }
+.text{
+    color:azure;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.upper,.lower{
+   color: black;
+   background-color: beige;
+   align-items: center;
+   justify-items: center;
+   height: 40px;
+   width: 80px;
+   border-radius: 50px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.mybutton{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 40px;
+  
+
+}
+        </style>
+    </head>
+    <body>
+        <h1 class="text" id="text">Magic Text</h1>
+    <div class="mybutton">
+        <button class="upper" onclick="upper()">Upper</button>
+        <button class="lower" onclick="lower()">Lower</button>
+    </div>
+    <script>
+                                                                                                
+            function upper(){
+                document.getElementById("text").
+                textContent = document.getElementById("text").textContent.toUpperCase()
+            }                 
+             
+            function lower(){
+                document.getElementById("text").
+                textContent = document.getElementById("text").textContent.toLowerCase()
+               
+            }
+    </script>
+    </body>
