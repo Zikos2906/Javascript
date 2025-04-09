@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Perimeter Calculator
+        </title>
+    </head>
+    <body>
+        <h1>Perimeter calculator</h1>
+
+
+
+        <script>
+            var choice = prompt("Welcome to Perimeter Calculator, Pick The following options to find out the perimeter: 1.Square , 2.Rectangle , 3.Circle")
+            if (choice == "1"){
+                var h = prompt("Enter The Height: ")
+                var perimeter = Number(h)*4
+                alert("The perimeter of the Square is: "+perimeter)
+            }
+
+            if (choice == "2"){
+                var l = prompt("Enter The Height: ")
+                var b = prompt("Enter the Breadth: ")
+                var perimeter = Number(l)*2+Number(b)*2
+                alert("The perimeter of the Rectangle is: "+perimeter)
+            }
+
+            if (choice == "3"){
+                var pie = 2*3.14 
+                var r = prompt("Enter the Radius: ")
+                var perimeter = Number(pie)*Number(r)
+                alert("The perimeter of the Circle is: "+perimeter)
+            }
+
+           
+            
+        </script>
+    </body>
+</html>
