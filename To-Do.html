@@ -1,0 +1,142 @@
+<html>
+
+<head>
+
+<title>Task Manager</title>
+
+<style>
+
+#box{
+
+background-color: crimson;
+
+padding: 10px;
+
+width: 340px;
+
+border: 3px solid gray;
+
+border-radius: 10px;
+
+text-align: center;
+
+margin: auto;
+
+margin-top: 200px;
+
+}
+
+#text{
+
+color: white;
+
+text-shadow: 3px 3px 5px black;
+
+}
+
+#task{
+
+padding: 5px;
+
+margin:10px;
+
+border-radius: 10px;
+
+text-align: center;
+
+font-size: 20px;
+
+font-weight: bold;
+
+border: 3px solid white;
+
+box-shadow: 2px 2px 5px black;
+
+}
+
+#taskbutton{
+
+padding: 10px;
+
+margin: 10px;
+
+border: 3px solid gold;
+
+border-radius: 20px;
+
+font-size: 15px;
+
+font-weight: bold;
+
+}
+
+.result{
+
+background-color: white;
+
+list-style: none;
+
+text-align: center;
+
+padding: 5px;
+
+width: 150px;
+
+margin: auto;
+
+font-size: 20px;
+
+font-weight: bold;
+
+border: 3px solid black;
+
+border-radius: 10px;
+
+margin: 3px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="box">
+
+<h1 id="text">Task Management App</h1>
+
+<input id="task" placeholder="Enter Task"/>
+
+<button id="taskbutton" onclick="AddTask()">Add Task</button>
+
+<ul id="tasklist">
+
+</ul>
+
+</div>
+
+<script>
+
+function AddTask(){
+
+var mytask = document.getElementById("task").value;
+
+var li = document.createElement("li");
+
+li.classList.add("result");
+
+li.textContent = mytask;
+
+var ul = document.getElementById("tasklist");
+
+ul.appendChild(li);
+
+}
+
+</script>
+
+</body>
+
+</html>
