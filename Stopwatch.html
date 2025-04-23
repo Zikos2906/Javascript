@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Stop Watch</title>
+    </head>
+    <body>
+        <h1>⏱️Stop Watch</h1>
+        <div id="time">00:00:00</div>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>        
+        <script>
+            var sec = 0;
+            var min = 0;
+            var hour = 0;
+            var timer = null;
+
+            function ShowTime(){
+                sec++
+
+                if(sec == 60){
+                    sec = 0;
+                    min++;
+                    if(min == 60){
+                    min = 0;
+                    hour++;
+                }
+                } 
+                document.getElementById("time").textContent = hour+" : "+min+" : "+sec
+
+               
+
+
+            }
+
+
+            function start(){
+                if(timer === null){
+                    timer = setInterval(ShowTime,1000)
+                }
+            }
+
+            function stop(){
+                clearInterval(timer);
+                timer = null;
+            }
+
+            function reset(){
+                stop();
+                sec = 0;
+                min = 0;
+                hour = 0;
+                document.getElementById("time").textContent = "0:0:0";
+            }
+
+        </script>
+    </body>
+</html>
