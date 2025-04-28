@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Clock JS
+        </title>
+        <style>
+            .clock{
+             display: flex;
+             gap: 10px;
+             justify-content: 40px;
+             background-color: crimson;
+             padding: 20px;
+             margin-top: 75px;
+
+
+            }
+
+            #component1{
+                background-color: aqua;
+                color:bisque ;
+                font-weight: bold;
+                padding:20px;
+                border-radius: 50px;
+            }
+
+            #component2{
+                background-color: yellowgreen;
+                color:bisque ;
+                font-weight: bold;
+                padding:20px;
+                border-radius: 50px;
+            }
+
+
+            #component3{
+                background-color: palegreen;
+                color:bisque ;
+                font-weight: bold;
+                padding:20px;
+                border-radius: 50px;
+            }
+        </style>
+        <body>
+            <div class="clock" id="clock">
+                <div id="component1"></div>
+                <div id="component2"></div>
+                <div id="component3"></div>
+    
+            
+    
+            </div>
+    
+    
+    
+    
+    
+    
+    
+            <script>
+                function DigitalClock(){
+                    const now = new Date();
+    
+                    var hour = now.getHours().toString();
+                    var minutes = now.getMinutes().toString();
+                    var seconds = now.getSeconds().toString();
+    
+                    var comp1 = document.getElementById("component1");
+                    var comp2 = document.getElementById("component2");
+                    var comp3 = document.getElementById("component3");
+    
+                    comp1.textContent = hour;
+                    comp2.textContent = minutes;
+                    comp3.textContent = seconds;
+                }
+    
+                setInterval(DigitalClock,1000)
+                DigitalClock()
+    
+    
+    
+    
+    
+            </script>
+    
+    
+    
+    
+        </body>
+    </head>
+</html>
