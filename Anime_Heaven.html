@@ -3,34 +3,66 @@
         <title>Anime Heaven</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body class="bg-gradient-to-r from-yellow-400 to-green-400">
-<h1 class="text-center text-5xl mt-5 font-bold 
-text-purple-800">Anime<span class="bg-red-700 text-white p-2
- rounded-3xl font-thin">Heaven</span></h1>
+    <body class=" bg-blue-200">
 
 
- <div class="mt-10 flex justify-center">
-    <iframe id="VideoPlayer" class="rounded-3xl border-white"  width="260" 
-    height="200" src="https://www.youtube.com/embed/cqkn9-DjrY0?si=saCL_wS76NoKdfSo" title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- </div>
+        <div class="text-center bg-cyan-500 
+        text-black text-4xl font-bold p-2">
+            <h1>Anime Heaven</h1>
+
+            <div class="flex-justify-center m-5">
+
+
+                <iframe class="rounded-4xl" id="animeplayer"  width="560" height="315" 
+                src="https://www.youtube.com/embed/kAqYc28LfMo?si=y3NN7zNbsp-seG_G"
+                 title="YouTube video player" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+
+
+            </div>
 
 
 
- <div class=" m-10 text-center bg-green-700 w-50 h-40 rounded-xl">
-    <img class="  h-40 w-40 rounded-xl border-4" src="https://wallpapers-clan.com/wp-content/uploads/2025/02/blue-lock-ryusei-stadium-pc-wallpaper-preview.jpg">
-    <button class="text-center bg-cyan-900 text-white font-thin px-4 py-1 m-2 rounded">Play</button>
- </div>
- <div class=" m-10 text-center bg-green-700 w-50 h-40 rounded-xl">
-    <img class="  h-40 w-40 rounded-xl border-4" src="https://wallpapers-clan.com/wp-content/uploads/2025/02/blue-lock-ryusei-stadium-pc-wallpaper-preview.jpg">
-    <button class="text-center bg-cyan-900 text-white font-thin px-4 py-1 m-2 rounded">Play</button>
- </div>
- <div class=" m-10 text-center bg-green-700 w-50 h-40 rounded-xl">
-    <img class="  h-40 w-40 rounded-xl border-4" src="https://wallpapers-clan.com/wp-content/uploads/2025/02/blue-lock-ryusei-stadium-pc-wallpaper-preview.jpg">
-    <button class="text-center bg-cyan-900 text-white font-thin px-4 py-1 m-2 rounded">Play</button>
- </div>
-    
+        </div>
 
-</body>
+        <div class="flex justify-content">
+
+
+
+            <div class="bg-cyan-800 w-45 p-2 rounded-2xl
+            text-center text-white m-10">
+                <img class="h-40 w-40 rounded-2xl" 
+                src="https://preview.redd.it/isagi-two-gun-volley-not-self-made-v0-umdv1guv13jd1.jpeg?auto=webp&s=f25ffd7c81a524e81b9a13cffa96a5211b398f46">
+                <p class="font-bold m-1">Isagi's Two Gun Volley</p>
+                <button  onclick="PlayVideo('https://www.youtube.com/embed/2y2CA87ReOA?si=ou_O3zyVAMz1o7BZ')" class="bg-cyan-200 px-4 py-1
+                text-black rounded-2xl font-bold">Play</button>
+            </div>
+
+
+            <div class="bg-cyan-800 w-45 p-2 rounded-2xl
+            text-center text-white m-10">
+                <img class="h-40 w-40 rounded-2xl" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyNPYSLYyTZQV1gpzxb4h4NqtncxRy9QhNw&s">
+                <p class="font-bold m-1">Nagi Elimination</p>
+                <button onclick="PlayVideo('https://www.youtube.com/embed/BrEK95ia910?si=9oe5CeTDm0c1nXDr')"class="bg-cyan-200 px-4 py-1
+                text-black rounded-2xl font-bold">Play</button>
+            </div>
+
+
+
+
+
+        </div>
+
+        <script>
+            function PlayVideo(src){
+               var animeplayer = document.getElementById("animeplayer")
+               animeplayer.src = src
+            }
+        </script>
+
+    </body>
 </html>
