@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: crimson;
+
+        }
+
+        .navbar a {
+            float: left;
+            color: bisque;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        .navbar a:hover {
+
+            background-color: blueviolet;
+            color: burlywood;
+
+
+        }
+
+        .active {
+            background-color: chartreuse;
+
+        }
+
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .myslides {
+            display: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a class="active" href="">Home</a>
+        <a href="About_Us.html">About Us</a>
+        <a href="">Contact</a>
+        <a href="">Services</a>
+    </div>
+
+
+    <div class="carousel-container">
+        <img class="myslides" src="1.png" height="300" width="300">
+        <img class="myslides" src="2.png" height="300" width="300">
+        <img class="myslides" src="3.png" height="300" width="300">
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
