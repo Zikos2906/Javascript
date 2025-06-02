@@ -4,77 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: aquamarine;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: crimson;
-
-        }
-
-        .navbar a {
-            float: left;
-            color: bisque;
-            padding: 14px 16px;
-            text-decoration: none;
-
-        }
-
-        .navbar a:hover {
-
-            background-color: blueviolet;
-            color: burlywood;
-
-
-        }
-
-        .active {
-            background-color: chartreuse;
-
-        }
-
-        .carousel-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-        }
-
-        .myslides {
-            display: none;
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+    <title>Bihan's Cookout</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-grey-200">
 
-    <div class="navbar">
-        <a class="active" href="">Home</a>
-        <a href="About_Us.html">About Us</a>
-        <a href="">Contact</a>
-        <a href="">Services</a>
-    </div>
+    <nav class="flex justify-between bg-cyan-200 p-2 items-center">
+        <div class="text-3xl font-bold ml-4 p-2 text-green-400">
+            <p>Bihan's cookout</p>
+        </div>
+        <div class="space-x-4 mr-2font-semibold">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
 
-
-    <div class="carousel-container">
-        <img class="myslides" src="1.png" height="300" width="300">
-        <img class="myslides" src="2.png" height="300" width="300">
-        <img class="myslides" src="3.png" height="300" width="300">
-
+        </div>
+    </nav>
 
 
-
-
-
-    </div>
 
 </body>
 
